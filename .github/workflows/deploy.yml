@@ -1,7 +1,10 @@
-name: Deploy Portfolio
+name: CI CD Test
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+
+permissions:
+  contents: write
 
 jobs:
   build-and-deploy:
@@ -13,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install & Build
         run: |
