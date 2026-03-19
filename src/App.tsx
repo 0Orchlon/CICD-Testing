@@ -20,7 +20,7 @@ function App() {
     <div className="company-site">
       <nav className="navbar">
         <div className="container-wide">
-          <div className="logo">DevOps Cloud Solutions</div>
+          <div className="logo">DevOps Cloud Solutions Made by DevOp7</div>
           <ul className="nav-links">
             <li><a href="#home">Нүүр</a></li>
             <li><a href="#about-cicd">CI/CD Тухай</a></li>
@@ -44,7 +44,7 @@ function App() {
         <div className="container-wide">
           <h2 className="section-title">CI/CD гэж юу вэ?</h2>
           <p className="section-intro">
-            CI/CD нь програм хангамж хөгжүүлэлтийн орчин үеийн арга барил бөгөөд автоматжуулалтын тусламжтайгаар 
+            CI/CD нь програм хангамж хөгжүүлэлтийн орчин үеийн арга барил бөгөөд автоматжуулалтын тусламжтайгаар
             код бичихээс эхлээд хэрэглэгчдэд хүрэх хүртэлх бүх шатыг хялбарчилдаг.
           </p>
 
@@ -56,7 +56,7 @@ function App() {
               <div className="cicd-text">
                 <h3>1. Continuous Integration (CI) - Тасралтгүй Нэгтгэл</h3>
                 <p>
-                  Хөгжүүлэгчид өдөр бүр хийсэн өөрчлөлтөө үндсэн код руу нэгтгэх процесс юм. 
+                  Хөгжүүлэгчид өдөр бүр хийсэн өөрчлөлтөө үндсэн код руу нэгтгэх процесс юм.
                   Энэ үед автомат тестүүд ажиллаж, шинэ код нь хуучин кодтой зөрчилдөж байгаа эсэхийг шалгадаг.
                 </p>
                 <ul>
@@ -74,7 +74,7 @@ function App() {
               <div className="cicd-text">
                 <h3>2. Continuous Delivery & Deployment (CD) - Тасралтгүй Хүргэлт</h3>
                 <p>
-                  CI шатны дараа програм хангамжийг автоматаар бэлэн болгож, туршилтын эсвэл бодит орчинд 
+                  CI шатны дараа програм хангамжийг автоматаар бэлэн болгож, туршилтын эсвэл бодит орчинд
                   байршуулах процесс юм. Энэ нь алдаа гарах эрсдэлийг бууруулж, шинэ боломжуудыг хэрэглэгчдэд хурдан хүргэдэг.
                 </p>
                 <ul>
