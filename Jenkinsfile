@@ -28,6 +28,15 @@ pipeline {
             steps {
                 // Example deployment step
                 echo 'Deploying to web server...'
+                sshPublisher(publishers: [sshPublisherDesc(
+                    configName: 'MyWebServer', 
+                    transfers: [sshTransfer(
+                        sourceFiles: '**/*',
+                        remoteDirectory: '/var/www/html',
+                        cleanRemote: false
+                    )],
+                    verbose: true
+                )])
                 // sh 'scp -r dist/* user@your-server:/var/www/portfolio'
             }
         }
