@@ -24,22 +24,9 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+        stage('Test Complete') {
             steps {
-                echo 'Deploying to web server...'
-                // Example using the sshPublisher plugin (ensure SSH connection is configured in Jenkins)
-                sshPublisher(publishers: [sshPublisherDesc(
-                    configName: 'MyWebServer', 
-                    transfers: [sshTransfer(
-                        sourceFiles: 'dist/**/*', // Make sure the build files are under dist/ directory
-                        remoteDirectory: '/var/www/html', // Adjust to your server's web folder
-                        cleanRemote: false
-                    )],
-                    verbose: true
-                )])
-
-                // Alternatively, you could use SCP instead of sshPublisher
-                // sh 'scp -r dist/* user@your-server:/var/www/html'
+                echo 'Test Complete'
             }
         }
     }
